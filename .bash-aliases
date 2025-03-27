@@ -1,0 +1,26 @@
+alias ....="cd ../../.. && ls -lha"
+alias ...="cd ../.. && ls -lha"
+alias ..="cd .. && ls -lha"
+alias bashreload="source ~/.bashrc"
+alias bat="batcat"
+alias clip="xclip -selection clipboard"
+alias clipget="xclip -o | batcat"
+alias clipsave="clip >"
+alias clp="clip"
+alias fzf="fzf --preview 'batcat --color=always --style=numbers --line-range=:500 {}'"
+alias gitaddu="git add -u"  # add all untracked
+alias gitbranchcheckout="git checkout"  # checkout local branch
+alias gitbranchdelete="git branch -D"  # force delete a local branch
+alias gitbranchdeleteremote="git push origin --delete"  # delete a remote branch
+alias gitbranchlist="git branch -l"  # list git branches
+alias gitbranchnew="git checkout -b"  # make a new branch, checkout
+alias gitcheckout="git checkout"  # checkout local branch
+alias gitcommitm="git commit -m"  # make a commit with a message
+alias gitpush="git push -u origin HEAD" # push branch to remote, setting as current
+alias godotfiles="cd ~/pi-dotfiles && ls -la"
+alias grep="grep --color=auto"
+alias ls="eza -lh"
+alias lsa="eza -lha --long --header --git"
+alias lsl="eza -lh --long --header --git"
+alias pwdc="pwd | clip"
+alias tree="eza --tree"
