@@ -2,7 +2,7 @@
 
 ## Mission
 Starter notes and configuration for setting up a Raspberry Pi 4 as a server.\
-These instructions are meant as a starting position for a Raspberry Pi 4 to be used as a server, and do not include packages for use in a desktop environment.\
+These instructions are meant as a starting position for a Raspberry Pi 4 to be used as a server, or as a Linux development machine, and do not include packages for use in a desktop environment.\
 Not all system restart points are documented here, a system reboot may be required, and error messages may be displayed if resource paths don't exist yet in dotfiles.
 
 This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructions should work on any Debian distro with few modifications.
@@ -14,7 +14,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 ## Download this repo
 * Download this repo to `$HOME` directory
 * Install dependencies:
-    * `$ xargs sudo apt install -y < packages.txt`
+    * `xargs sudo apt install -y < packages.txt`
 * Run [Stow](https://www.gnu.org/software/stow/manual/stow.html)
     * rename existing dotfiles in $HOME (ex: `.bash_profile`, `.bashrc`) to avoid conflicts
 * Install [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix) 
@@ -58,11 +58,13 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 
 ## Install nvm
 * `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash`
+* reload terminal or source `.bashrc`
 * `nvm install node`
 
 ## Install Yazi
 * Install [Yazi](https://yazi-rs.github.io/docs/installation/#build-from-source) from source
-    * follow instructions for installing dependencies and rust 
+    * follow instructions for installing dependencies and [Rust](#install-rust)
+    * dependencies are included in `packages.txt` from this repo
     * build `ya` from source
     * Shared yazi configuration available on github
 
