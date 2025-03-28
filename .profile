@@ -25,4 +25,12 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# go path
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
+export GOPATH="$HOME/go"
 . "$HOME/.cargo/env"
+
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR="vim"
+fi

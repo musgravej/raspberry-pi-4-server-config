@@ -19,6 +19,7 @@ alias gitcommitm="git commit -m"  # make a commit with a message
 alias gitpush="git push -u origin HEAD" # push branch to remote, setting as current
 alias godotfiles="cd ~/pi-dotfiles && ls -la"
 alias grep="grep --color=auto"
+alias lazygit="$HOME/go/bin/lazygit"
 alias ls="eza -lh"
 alias lsa="eza -lha --long --header --git"
 alias lsl="eza -lh --long --header --git"
