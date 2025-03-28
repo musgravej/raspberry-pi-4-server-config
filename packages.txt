@@ -1,3 +1,4 @@
+7zip
 arp-scan
 autoconf
 automake
@@ -8,10 +9,13 @@ curl
 dconf-cli
 eza
 fd-find
+ffmpeg
 fontconfig
 g++
 gettext
 git
+imagemagick
+jq
 llvm
 lzma
 lzma-dev
@@ -21,6 +25,7 @@ ninja-build
 nodejs
 openssl
 pkg-config
+poppler-utils
 ripgrep
 sqlite3
 sshfs
