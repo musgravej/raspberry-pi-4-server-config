@@ -65,12 +65,13 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 * Install [Yazi](https://yazi-rs.github.io/docs/installation/#build-from-source) from source
     * follow instructions for installing dependencies and [Rust](#install-rust)
     * dependencies are included in `packages.txt` from this repo
-    * build `ya` from source
-    * Shared yazi configuration available on github
+    * install to `$HOME` directory
+    * yazi configuration instructions in this repo in the `yazi-config` directory 
 
 ## Install Lazygit
 * `go install github.com/jesseduffield/lazygit@latest`
 * if lazygit won't run from command line, make an alias pointing to lazygit installation: `alias lazygit="$HOME/go/bin/lazygit"`
+* custom lazygit configuration can be found in [this repo](https://github.com/musgravej/lazygit-config)
 
 ## Install text editor / IDE
 * Vim
