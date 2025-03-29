@@ -7,7 +7,11 @@ Not all system restart points are documented here, a system reboot may be requir
 
 This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructions should work on any Debian distro with few modifications.
 
-### Github
+## Create SSH connection
+*
+
+
+## Github
 * [create ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 * [add new ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to github
 
@@ -35,11 +39,13 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 * `./install.sh`
 
 ## Install Go
-* Download [Golang](https://golang.org/dl/)
+<details>
+    <summary>* Download [Golang](https://golang.org/dl/)</summary>
 	* get correct version for system architecture (`$ arch`)
 	* ex: `go1.23.5.linux-armv64.tar.gz`
 	* use `wget` command to save to pi `/tmp` directory
 		* go to the list of release downloads, find correct download, copy file url, use `wget` to download to `/tmp` directory
+<details>
 * Install / Re-install Go
 	* may require sudo permissions
 	* `rm -rf /usr/local/go`
