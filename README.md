@@ -18,7 +18,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 * Run [Stow](https://www.gnu.org/software/stow/manual/stow.html)
     * rename existing dotfiles in $HOME (ex: `.bash_profile`, `.bashrc`) to avoid conflicts
     * run stow: `cd $HOME/raspberry-pi-4-server-config && stow .`
-* Install [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix) 
+* Install [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix)
 
 ## Install FZF
 * Install from [repo](https://github.com/junegunn/fzf?tab=readme-ov-file#using-git)
@@ -68,7 +68,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
     * follow instructions for installing dependencies and [Rust](#install-rust)
     * dependencies are included in `packages.txt` from this repo
     * install to `$HOME` directory
-    * yazi configuration instructions in this repo in the `yazi-config` directory 
+    * yazi configuration instructions in this repo in the `yazi-config` directory
 
 ## Install Lazygit
 * `go install github.com/jesseduffield/lazygit@latest`
@@ -82,3 +82,6 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 * NeoVim
     * example [Neovim config](https://github.com/musgravej/nvim_public) for Raspberry Pi.
     * fork repo and customize
+
+## Install Docker
+** Follow Docker install [instructions](https://docs.docker.com/engine/install/ubuntu/)
