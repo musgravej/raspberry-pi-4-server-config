@@ -17,6 +17,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
     * `xargs sudo apt install -y < packages.txt`
 * Run [Stow](https://www.gnu.org/software/stow/manual/stow.html)
     * rename existing dotfiles in $HOME (ex: `.bash_profile`, `.bashrc`) to avoid conflicts
+    * run stow: `cd $HOME/raspberry-pi-4-server-config && stow .`
 * Install [pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#linuxunix) 
 
 ## Install FZF
@@ -25,6 +26,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 
 ## Create `github` path
 * `mkdir $HOME/github`
+* use this path for downloading github repos
 
 ## Install Rust
 * `cd /tmp`
@@ -53,7 +55,7 @@ This has been tested on a Raspberry Pi 4, Ubuntu Server 24.10.  These instructio
 		* `export GOPATH="$HOME/go"`
 * Restart system
 * Confirm installation:
-	* `$ go env`
+	* `go env`
 	* look for entries of `GOPATH`, `GOROOT`, `GOVERSION`
 
 ## Install nvm
