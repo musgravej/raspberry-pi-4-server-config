@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+function cdl() {
+  DIR="$*";
+  # if no DIR given, go home
+    if [ $# -lt 1 ]; then
+      DIR=$HOME;
+    fi;
+    builtin cd "${DIR}" && \
+    # use your preferred ls command
+    ls -Flh
+}
+
+function mkcd() {
+  mkdir -p -- "$1" && cd -P -- "$1"
+}
