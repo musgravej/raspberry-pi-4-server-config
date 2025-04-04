@@ -34,6 +34,8 @@ Host [alias name]
 * Check the key was transferred from client to host by comparing
 	* host: `$HOME/.ssh/authorized_keys` == client `$HOME/.ssh/{key}.pub`
 
+We can now connect from the client to the host using a simple command: `ssh [alias name]`.
+
 We can configure the host to disallow any password authentication over ssh, and only accept the usage of a key.
 In `/etc/ssh/sshd_config`:
 
